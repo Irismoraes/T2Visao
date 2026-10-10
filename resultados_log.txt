@@ -1,0 +1,83 @@
+== 1. Detecção dos cantos ==
+  img_01.jpg: 9x4 cantos | resíduo homografia 6.19px
+  img_02.jpg: 9x4 cantos | resíduo homografia 4.25px
+  img_03.jpg: 9x4 cantos | resíduo homografia 3.76px
+  img_04.jpg: 9x4 cantos | resíduo homografia 4.95px
+  img_05.jpg: 9x4 cantos | resíduo homografia 2.69px
+  img_06.jpg: 9x4 cantos | resíduo homografia 4.23px
+  img_07.jpg: 9x4 cantos | resíduo homografia 4.62px
+  img_08.jpg: 9x4 cantos | resíduo homografia 3.57px
+  img_09.jpg: 9x4 cantos | resíduo homografia 3.02px
+  img_10.jpg: 9x4 cantos | resíduo homografia 2.42px
+  img_11.jpg: 9x4 cantos | resíduo homografia 2.26px
+  img_12.jpg: 9x4 cantos | resíduo homografia 2.06px
+  img_13.jpg: 9x4 cantos | resíduo homografia 3.08px
+  img_14.jpg: 9x4 cantos | resíduo homografia 2.92px
+  img_15.jpg: tabuleiro nao encontrado (descartada)
+  img_16.jpg: 9x4 cantos | resíduo homografia 3.74px
+  img_17.jpg: 9x4 cantos | resíduo homografia 3.82px
+
+== 2. Calibração ==
+  Imagens usadas: 16 | tamanho: 4080x3060
+  Erro RMS de reprojeção: 3.601 px
+  K =
+ [[2994.77    0.   1979.94]
+ [   0.   2999.79 1539.21]
+ [   0.      0.      1.  ]]
+  dist (k1 k2 p1 p2 k3) = [ 1.9522e-01 -4.5127e-01  3.2540e-03 -4.2338e-04  0.0000e+00]
+  FOV horizontal = 68.5°, vertical = 54.0°
+    img_01.jpg: erro=6.391px  dist. câmera=0.86 m
+    img_02.jpg: erro=2.901px  dist. câmera=0.99 m
+    img_03.jpg: erro=3.656px  dist. câmera=0.65 m
+    img_04.jpg: erro=3.498px  dist. câmera=0.91 m
+    img_05.jpg: erro=2.885px  dist. câmera=0.90 m
+    img_06.jpg: erro=3.980px  dist. câmera=0.89 m
+    img_07.jpg: erro=3.410px  dist. câmera=1.09 m
+    img_08.jpg: erro=3.262px  dist. câmera=0.83 m
+    img_09.jpg: erro=3.257px  dist. câmera=0.73 m
+    img_10.jpg: erro=2.348px  dist. câmera=1.35 m
+    img_11.jpg: erro=2.176px  dist. câmera=1.63 m
+    img_12.jpg: erro=2.179px  dist. câmera=1.56 m
+    img_13.jpg: erro=3.178px  dist. câmera=1.19 m
+    img_14.jpg: erro=3.343px  dist. câmera=1.39 m
+    img_16.jpg: erro=4.320px  dist. câmera=0.62 m
+    img_17.jpg: erro=4.541px  dist. câmera=0.53 m
+
+== 3. Remoção da distorção ==
+  img_01.jpg: desvio das linhas retas  antes=4.15px  depois=3.21px
+  img_02.jpg: desvio das linhas retas  antes=1.68px  depois=1.24px
+  img_03.jpg: desvio das linhas retas  antes=2.05px  depois=1.58px
+  img_04.jpg: desvio das linhas retas  antes=2.61px  depois=1.85px
+  img_05.jpg: desvio das linhas retas  antes=1.62px  depois=1.50px
+  img_06.jpg: desvio das linhas retas  antes=2.21px  depois=1.66px
+  img_07.jpg: desvio das linhas retas  antes=2.13px  depois=1.64px
+  img_08.jpg: desvio das linhas retas  antes=1.70px  depois=1.77px
+  img_09.jpg: desvio das linhas retas  antes=1.59px  depois=1.78px
+  img_10.jpg: desvio das linhas retas  antes=1.17px  depois=1.14px
+  img_11.jpg: desvio das linhas retas  antes=1.45px  depois=1.11px
+  img_12.jpg: desvio das linhas retas  antes=1.10px  depois=0.93px
+  img_13.jpg: desvio das linhas retas  antes=1.73px  depois=1.22px
+  img_14.jpg: desvio das linhas retas  antes=1.27px  depois=1.38px
+  img_16.jpg: desvio das linhas retas  antes=2.04px  depois=2.03px
+  img_17.jpg: desvio das linhas retas  antes=1.97px  depois=2.21px
+  Deslocamento máximo na região coberta pelos cantos: 35.3 px (cantos da imagem, extrapolado: 300.8 px)
+
+== 4. Projeção de pontos 3D conhecidos nas imagens ==
+  img_01.jpg: calib=4.43px | leave-one-out (4 pts p/ pose)=14.37px (máx 38.84) | sem distorção=21.55px
+  img_02.jpg: calib=2.48px | leave-one-out (4 pts p/ pose)=2.99px (máx 9.94) | sem distorção=7.56px
+  img_03.jpg: calib=3.25px | leave-one-out (4 pts p/ pose)=4.26px (máx 11.73) | sem distorção=6.51px
+  img_04.jpg: calib=3.02px | leave-one-out (4 pts p/ pose)=3.63px (máx 9.85) | sem distorção=10.85px
+  img_05.jpg: calib=2.56px | leave-one-out (4 pts p/ pose)=3.23px (máx 6.42) | sem distorção=8.12px
+  img_06.jpg: calib=3.29px | leave-one-out (4 pts p/ pose)=4.71px (máx 16.86) | sem distorção=7.68px
+  img_07.jpg: calib=3.08px | leave-one-out (4 pts p/ pose)=5.12px (máx 11.13) | sem distorção=13.70px
+  img_08.jpg: calib=2.94px | leave-one-out (4 pts p/ pose)=4.21px (máx 9.17) | sem distorção=7.38px
+  img_09.jpg: calib=2.91px | leave-one-out (4 pts p/ pose)=3.53px (máx 8.23) | sem distorção=8.02px
+  img_10.jpg: calib=2.05px | leave-one-out (4 pts p/ pose)=4.66px (máx 8.51) | sem distorção=6.73px
+  img_11.jpg: calib=1.92px | leave-one-out (4 pts p/ pose)=2.50px (máx 4.32) | sem distorção=19.54px
+  img_12.jpg: calib=1.91px | leave-one-out (4 pts p/ pose)=3.11px (máx 8.29) | sem distorção=10.82px
+  img_13.jpg: calib=2.80px | leave-one-out (4 pts p/ pose)=5.63px (máx 12.08) | sem distorção=8.70px
+  img_14.jpg: calib=2.92px | leave-one-out (4 pts p/ pose)=4.11px (máx 8.51) | sem distorção=10.89px
+  img_16.jpg: calib=3.69px | leave-one-out (4 pts p/ pose)=4.43px (máx 11.55) | sem distorção=18.20px
+  img_17.jpg: calib=4.09px | leave-one-out (4 pts p/ pose)=11.69px (máx 25.79) | sem distorção=10.88px
+
+Resultados salvos em ./resultados/
